@@ -1,0 +1,142 @@
+body
+{
+    background-color: lightblue;
+    margin-top: 0px;
+}
+main
+{  
+    max-width: 80ch;
+    margin: auto;
+    
+}
+p
+{
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    max-width: 65ch;
+}
+h1
+{
+    font-size: 100px;
+}
+h2
+{
+    font-size: 75px;
+}
+h3
+{
+    font-size: 50px;
+}
+.Work_Contribution, h2, h1, nav
+{
+    text-align:center;
+}
+.flex-container
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-container > div{
+    box-sizing: border-box;
+    flex: 1 1 300px;
+    margin: 25px;
+    padding: 5px;
+}
+a:hover
+{
+    background-color: #A5FF7D;
+}
+img
+{
+    max-width:100%;
+}
+.videos, .sketch, .graphic_project
+{
+    width: 560px;
+    margin: auto;
+}
+.drawing
+{
+    width: 600px;
+}
+iframe
+{
+    width: 560px;
+    aspect-ratio: 16/9;
+}
+.linkedin
+{
+    vertical-align: text-bottom;
+}
+.sketch, .single
+{
+    width: 400px;
+}
+.graphic
+{
+    width: 225px;
+}
+.code
+{
+    width: 500px;
+}
+.center
+{
+    margin:auto;
+}
+nav
+{
+    padding: 10px;
+    background-color: #e8ff17;
+    margin-bottom: 10px;
+}
+nav > a
+{
+    padding-left:20px;
+    padding-right:20px;
+}
+p, h1, h2, h3
+{
+    margin: 10px;
+}
+@media screen and(max-width: 800px){
+    .flex-container > div, .flex-container > img{
+        flex: 1 1 300px;
+        margin: 10px;
+        padding: 5px;
+        flex: 100%;
+    }
+    iframe
+    {
+        width: 320px;
+    }
+    .drawing, .single
+    {
+        width: 400px;
+    }
+    .graphic
+    {
+        width: 225px;
+    }
+    .code
+    {
+        width: 500px;
+    }
+    nav
+    {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    nav > a
+    {
+        padding-left:20px;
+        padding-right:20px;
+    }
+    p, h1, h2, h3
+    {
+        margin: 10px;
+    }
+}
