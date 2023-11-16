@@ -10,8 +10,10 @@
         <a href = "sketchgraphics.html">Digital Sketches and Graphics</a>
         <a href = "games.html">Games Coded</a>
     </nav>
+    <button onclick="topFunction()" id="top_button"><img src = "Top Arrow.png"></button>
     <main>
         <center><img src = "Jake portfolio picture 1.jpg" height="500px"> </center>
+    <div.sticky id = "Top Arrow">Top_Arrow.png</div.sticky>
     <h2>About Me</h2>
     <p>Hello, my name is Jake Simon.  My pronouns are they/them.  I am an intern at FilmAcademy360, a filming program of the Academy360 Upper School, in Livingston, New Jersey.  During my time there, I have contributed to editing and filming projects for other companies, as well as planning throughout the entire production process of my own videos produced by them.<br>
         My education consists of a Bachelor's degree with a major in Media Studies, with an HONORS degree in Social Science from William Paterson University.  I also take sessions in Game-U for drawing and game development.<br>
@@ -26,6 +28,27 @@
     <p>This is a documentary about me taking Uber from my house to FilmAcademy360 and William Patterson for my daily routine.  It shows how I use Uber to get to work and college instead of driving myself, while still being productive with my day-to-day life.  This video was filmed before Covid-19 and it was originally going to be used for Uber company as advertisement;  unfortunately they declined the offer as Covid-19 became prominent and I was not wearing a mask, which would not have been good for the company's publicity at the time.  This was also before I started to identify as non-binary, so the other people being interviewed were referring to me with masculine pronouns.</p>
         <p><img src = "linkedin.png" width = "15px" class = linkedin> <a class = "margin" href = https://www.linkedin.com/in/jake-simon-a88010177/>LinkedIn Account</a></p>
     </main>
+<script>
+// Get the button
+let mybutton = document.getElementById("top_button");
+
+// When the user scrolls down 400px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+mybutton.style.display = "none";
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 <footer>
     <p>© Jake Simon 2023</p>

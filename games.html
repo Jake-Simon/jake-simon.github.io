@@ -11,6 +11,7 @@
         <a href = "sketchgraphics.html">Digital Sketches and Graphics</a>
         <a href = "games.html">Games Coded</a>
     </nav>
+    <button onclick="topFunction()" id="top_button"><img src = "Top Arrow.png"></button>
     <h1>Video Game Creation</h1>
     <h2>(In Progress)</h2>
     <p class = "Work_Contribution center">I have used Unity since 2021 as my software for game development, which utilizes C# for scripts.  This has been used for my game development classes in Game-U.  I have also gotten the opprotunity to work with student game development teams to better understand the work process of cooperation.</p>
@@ -22,6 +23,27 @@
     <img class = "code" src = "Split%20enemy.jpeg" width = "500">
     <img class = "code" src = "Chase%20enemy.jpeg" width = "500">
     </div>
+<script>
+// Get the button
+let mybutton = document.getElementById("top_button");
+
+// When the user scrolls down 400px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+mybutton.style.display = "none";
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 <footer>
     <p>© Jake Simon 2023</p>

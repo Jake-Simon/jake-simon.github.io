@@ -90,7 +90,6 @@ iframe
 nav
 {
     padding: 10px;
-    background-color: #e8ff17;
     margin-bottom: 10px;
 }
 nav > a
@@ -98,9 +97,31 @@ nav > a
     padding-left:20px;
     padding-right:20px;
 }
+.webpages
+{
+     background-color: #e8ff17;
+}
+
+.contents
+{
+    border: black solid 2px;
+    margin: auto;
+    width: fit-content;
+}
 p, h1, h2, h3
 {
     margin: 10px;
+}
+#top_button
+{
+   width: 72px;
+   height: 99px;
+   background-color: lightblue;
+   border: none;
+   cursor: pointer;
+   bottom: 0;
+   right: 0;
+   position: fixed;
 }
 @media screen and(max-width: 800px){
     .flex-container > div, .flex-container > img{

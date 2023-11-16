@@ -5,16 +5,21 @@
     <link href = "style.css" type = 'text/css' rel = 'stylesheet'>
 </head> 
 <body>
-    <nav>
+    <nav class = "webpages">
         <a href = "index.html">About Me</a>
         <a href = "video.html">Video Contributions</a>
         <a href = "sketchgraphics.html">Digital Sketches and Graphics</a>
         <a href = "games.html">Games Coded</a>
     </nav>
     <h1>Video Production</h1>
-    <div id = "YouTube">
         <p id = Video Editing class="center Work_Contribution">I have used Adobe Premiere as a major source for my editing since 2015 in high school.</p>
-    <div id = "Star Giant Productions">
+    <nav class = "contents"><b>Contents</b><br>
+    <a href="#StarGiant">Star Giant Productions</a><br>
+    <a href="#FilmAcademy360">Film Academy 360</a><br>
+    <a href="#Misc">Professional Development</a>
+    </nav>
+    <button onclick="topFunction()" id="top_button"><img src = "Top Arrow.png"></button>
+    <div id = "StarGiant">
     <h2>Star Giant Productions Contributions</h2>
         <p class = "Work_Contribution center">Star Giant Productions is a YouTube channel owned by Rebeccah Starlight.  Her videos mostly involve ranking and reviewing Western Animation based on a specific topic.  I work as one of several editors for her channel since November 2021 under the name SageFroppy.</p>
         <div class = "flex-container">
@@ -107,7 +112,7 @@
         </div>
     </div>
     <div id = "FilmAcademy360">
-        <h2>FilmAcademy360</h2>
+        <h2>FilmAcademy360 Contributions</h2>
         <p class = "Work_Contribution center">FilmAcademy360 is a film studio that is part of the Academy360 Upper School in Livingston, New Jersey, and is run by David DiIanni. Many of the videos produced by the studio are created by students in the program and published on the Media Crunch YouTube Channel.  I have contributed to FilmAcademy360 since 2015 and am currently working as an intern since 2020.  Throughout my time in FilmAcademy360, I have created my own show on the Youtube Channel called "Jake's Animated Review Show", where I discuss anime.  During my Animated Review Show, I also have a contribution to help with camerawork and editing.</p>
         <div class = "flex-container">
             <div id = "One Piece">
@@ -140,6 +145,39 @@
             </div>
         </div>
     </div>
+<div id = "Misc">
+    <h2>Professional Development</h2>
+    <p class = "Work_Contribution center">This is a section for video work practice that is not related to my client or the place I intern.</p>
+    <div class = "flex-container">
+        <div id = "First Adobe Effects Project">
+            <div class = "videos">
+                <iframe src = Looped%20first%20Effects.mp4></iframe>
+                <h3>First Adobe Effects practice</h3>
+                <p>This is my first practice project using Adobe Affects Effects.  It uses clips with the Winter Soldier in them as a setup for the project.  Credit goes to the YouTuber <i>starknstrange</i> for setting up the tutorial course.</p>
+            </div>
+        </div>
+    </div>
+<script>
+// Get the button
+let mybutton = document.getElementById("top_button");
+
+// When the user scrolls down 400px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+mybutton.style.display = "none";
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 <footer>
     <p>© Jake Simon 2023</p>
