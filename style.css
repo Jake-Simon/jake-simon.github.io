@@ -62,7 +62,7 @@ img
 {
     width: 600px;
 }
-iframe
+iframe, video
 {
     width: 560px;
     aspect-ratio: 16/9;
