@@ -87,6 +87,10 @@ iframe, video
 {
     margin:auto;
 }
+.right
+{
+    text-align: right;
+}
 nav
 {
     padding: 10px;
